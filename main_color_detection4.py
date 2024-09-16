@@ -16,12 +16,12 @@ st.set_page_config(
 )
 
 # Load the YOLO model
-model = YOLO('C:/Users/BEST LAPTOP/Desktop/STAGE2_color_DETECTION/weights/last.pt')  # from my PC
-#model = YOLO('weights/last.pt')  #  from Streamlit cloud
+#model = YOLO('C:/Users/BEST LAPTOP/Desktop/STAGE2_color_DETECTION/weights/last.pt')  # from my PC
+model = YOLO('weights/last.pt')  #  from Streamlit cloud
 
 # Load the trained Random Forest model
-rf_model_path = "C:/Users/BEST LAPTOP/Desktop/STAGE2_color_DETECTION/weights/RF_model_4colors.pkl"  # from my PC
-#rf_model_path = "weights/RF_model.pkl"#  from Streamlit cloud
+#rf_model_path = "C:/Users/BEST LAPTOP/Desktop/STAGE2_color_DETECTION/weights/RF_model_4colors.pkl"  # from my PC
+rf_model_path = "weights/RF_model_4colors.pkl"#  from Streamlit cloud
 rf_model = joblib.load(rf_model_path)
 
 # Set a confidence threshold
