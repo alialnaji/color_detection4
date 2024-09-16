@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tongue_detection_yolo8_app"
+version = "0.1.0"
+description = "Tongue Disease Detection using YOLOv8"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+opencv-python = "^4.5.3"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+streamlit = "^1.38.0"
+ultralytics = "^8.2.85"
+joblib = "^1.4.2"  # Added joblib dependency
+scikit-learn = "^1.5.2"  # Added scikit-learn dependency
+openpyxl = "^3.1.5"  # Added this line
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
